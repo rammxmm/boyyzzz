@@ -160,6 +160,22 @@
         .cart-item button:hover {
             background-color: #444;
         }
+         .checkout-container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .checkout-container button {
+            background-color: #000;
+            color: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
     </style>
 </head>
 <body>
@@ -201,6 +217,7 @@
         <h2>Carrito de Compras</h2>
         <div id="cart-items"></div>
         <p>Total: $<span id="total-price">0.00</span></p>
+                <div class="checkout-container">
         <button onclick="completePurchase()">Completar Pago</button>
     </div>
 
